@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Overview and Market Values</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #28a745;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #28a745;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        td {
+            background-color: #fff;
+        }
+        .update-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .update-btn:hover {
+            background-color: #218838;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cryptocurrency Overview and Market Values</h1>
+        <p>Stay updated with the latest trends and values in the cryptocurrency market.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="abc.html">Home</a></li>
+            
+            <li><a href="market.html">Markets</a></li>
+            <li><a href="economy.html">Economy</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="section">
+            <h2>Cryptocurrency Overview</h2>
+            <p>Cryptocurrencies are digital or virtual currencies that use cryptography for security. They operate on decentralized networks based on blockchain technology. Popular cryptocurrencies include Bitcoin, Ethereum, and Litecoin. The crypto market is known for its volatility and rapid price changes, making it essential for investors to stay informed about market trends and updates.</p>
+        </div>
+
+        <div class="section">
+            <h2>Crypto Market Values</h2>
+            <table id="cryptoTable">
+                <thead>
+                    <tr>
+                        <th>Cryptocurrency</th>
+                        <th>Value (USD)</th>
+                        <th>Change (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bitcoin (BTC)</td>
+                        <td id="btcValue">$27,500</td>
+                        <td id="btcChange">+2.5%</td>
+                    </tr>
+                    <tr>
+                        <td>Ethereum (ETH)</td>
+                        <td id="ethValue">$1,800</td>
+                        <td id="ethChange">-1.8%</td>
+                    </tr>
+                    <tr>
+                        <td>Litecoin (LTC)</td>
+                        <td id="ltcValue">$90</td>
+                        <td id="ltcChange">+0.3%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="update-btn" onclick="updateCryptoValues()">Update Values</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Crypto Insights. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function getRandomChange() {
+            return (Math.random() * 5 - 2.5).toFixed(2); // Random change between -2.5% and +2.5%
+        }
+
+        function updateCryptoValues() {
+            // Simulating new crypto values
+            document.getElementById('btcValue').textContent = '$' + (27500 + Math.floor(Math.random() * 5000)).toLocaleString();
+            document.getElementById('btcChange').textContent = getRandomChange() + '%';
+
+            document.getElementById('ethValue').textContent = '$' + (1800 + Math.floor(Math.random() * 300)).toLocaleString();
+            document.getElementById('ethChange').textContent = getRandomChange() + '%';
+
+            document.getElementById('ltcValue').textContent = '$' + (90 + Math.floor(Math.random() * 20)).toLocaleString();
+            document.getElementById('ltcChange').textContent = getRandomChange() + '%';
+        }
+    </script>
+    <a href="abc.html">REDIRECT TO ORIGINAL PAGE</a>
+</body>
+</html>

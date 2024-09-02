@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic Overview and Financial Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        td {
+            background-color: #fff;
+        }
+        .update-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .update-btn:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Economic Overview and Financial Data</h1>
+        <p>Your source for the latest insights into the economy and financial indicators.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="abc.html">Home</a></li>
+            
+            <li><a href="market.html">Markets</a></li>
+            <li><a href="crpto.html">Crypto</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="section">
+            <h2>Economy Overview</h2>
+            <p>The economy is a complex system encompassing various factors such as GDP growth, inflation, unemployment rates, and monetary policies. Recent trends show a global shift towards digital transformation and sustainable growth. Economists are closely monitoring these indicators to gauge economic stability and forecast future trends. Understanding these dynamics is crucial for businesses, investors, and policymakers alike.</p>
+        </div>
+
+        <div class="section">
+            <h2>Financial Economy Data</h2>
+            <table id="economyTable">
+                <thead>
+                    <tr>
+                        <th>Indicator</th>
+                        <th>Value</th>
+                        <th>Change (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GDP Growth Rate</td>
+                        <td id="gdpValue">3.2%</td>
+                        <td id="gdpChange">+0.5%</td>
+                    </tr>
+                    <tr>
+                        <td>Inflation Rate</td>
+                        <td id="inflationValue">2.8%</td>
+                        <td id="inflationChange">-0.3%</td>
+                    </tr>
+                    <tr>
+                        <td>Unemployment Rate</td>
+                        <td id="unemploymentValue">4.1%</td>
+                        <td id="unemploymentChange">+0.1%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="update-btn" onclick="updateEconomyData()">Update Data</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Economic Insights. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function getRandomChange() {
+            return (Math.random() * 2 - 1).toFixed(2); // Random change between -1% and +1%
+        }
+
+        function updateEconomyData() {
+            // Simulating new economic data values
+            document.getElementById('gdpValue').textContent = (Math.random() * 2 + 2).toFixed(1) + '%'; // Random GDP growth between 2% and 4%
+            document.getElementById('gdpChange').textContent = getRandomChange() + '%';
+
+            document.getElementById('inflationValue').textContent = (Math.random() * 2 + 1.5).toFixed(1) + '%'; // Random inflation between 1.5% and 3.5%
+            document.getElementById('inflationChange').textContent = getRandomChange() + '%';
+
+            document.getElementById('unemploymentValue').textContent = (Math.random() * 2 + 3).toFixed(1) + '%'; // Random unemployment between 3% and 5%
+            document.getElementById('unemploymentChange').textContent = getRandomChange() + '%';
+        }
+    </script>
+    <a href="abc.html">REDIRECT TO ORIGINAL PAGE</a>
+</body>
+</html>

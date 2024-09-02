@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Overview and Financial Values</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        td {
+            background-color: #fff;
+        }
+        .update-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .update-btn:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Market Overview and Financial Values</h1>
+        <p>Stay updated with the latest trends and values in the financial markets.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="abc.html">Home</a></li>
+            
+            <li><a href="economy.html">Economy</a></li>
+            <li><a href="crpto.html">Crypto</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="section">
+            <h2>Market Overview</h2>
+            <p>The financial markets encompass various platforms where financial assets are traded. These include stock markets, bond markets, and commodities markets. Understanding market trends, indices, and key financial metrics is essential for investors and businesses to make informed decisions. The market is influenced by economic indicators, corporate performance, and geopolitical events.</p>
+        </div>
+
+        <div class="section">
+            <h2>Financial Market Values</h2>
+            <table id="marketTable">
+                <thead>
+                    <tr>
+                        <th>Market Index</th>
+                        <th>Current Value</th>
+                        <th>Change (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dow Jones Industrial Average</td>
+                        <td id="djValue">$34,500</td>
+                        <td id="djChange">+1.2%</td>
+                    </tr>
+                    <tr>
+                        <td>NASDAQ Composite</td>
+                        <td id="nasdaqValue">$14,200</td>
+                        <td id="nasdaqChange">-0.5%</td>
+                    </tr>
+                    <tr>
+                        <td>S&P 500</td>
+                        <td id="sp500Value">$4,400</td>
+                        <td id="sp500Change">+0.8%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="update-btn" onclick="updateMarketValues()">Update Values</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Financial Insights. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function getRandomChange() {
+            return (Math.random() * 4 - 2).toFixed(2); // Random change between -2% and +2%
+        }
+
+        function updateMarketValues() {
+            // Simulating new market values
+            document.getElementById('djValue').textContent = '$' + (34500 + Math.floor(Math.random() * 2000)).toLocaleString();
+            document.getElementById('djChange').textContent = getRandomChange() + '%';
+
+            document.getElementById('nasdaqValue').textContent = '$' + (14200 + Math.floor(Math.random() * 1000)).toLocaleString();
+            document.getElementById('nasdaqChange').textContent = getRandomChange() + '%';
+
+            document.getElementById('sp500Value').textContent = '$' + (4400 + Math.floor(Math.random() * 200)).toLocaleString();
+            document.getElementById('sp500Change').textContent = getRandomChange() + '%';
+        }
+    </script>
+</body>
+</html>
+

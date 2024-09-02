@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Based Financial News Aggregator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI-Based Financial News Aggregator</h1>
+        <p>Your one-stop destination for the latest financial news, market analysis, and sentiment insights.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="market.html">Markets</a></li>
+            <li><a href="economy.html">Economy</a></li>
+            <li><a href="crpto.html">Crypto</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="mood-indicator">
+            <h2>TrendyGenz.</h2>
+            <p>Get the latest insights on the overall market mood based on real-time news sentiment analysis.</p>
+        </div>
+
+        <div class="news-list">
+           
+            <div class="news-item">
+                <h3> Large offshore investment  ( Finance )</h3>
+                <p>The Reserve Bank of India is scrutinizing large write-offs
+                     of overseas investments by several companies, suspecting these might not be
+                      genuine business decisions. Concerns arise as some firms may have used the 
+                      'overseas direct investment' route to transfer funds abroad, bypassing regulations. 
+                      The RBI is ensuring compliance with mandatory audit reports and valuation confirmations
+                       to validate the legitimacy of these investments. New overseas investment rules from
+                        August 2022 allow automatic write-offs, but recent cases under review are from prior 
+                        to 2022. The RBI's vigilance aims to uncover potentially fraudulent fund movements. - <strong> Negative</strong></p>
+                <a href="{{ news.link }}" target="_blank">Read more</a>
+            </div>
+          
+        </div>
+
+        <div class="command-prompt">
+            <h2>Command Prompt</h2>
+            <p>Interact with the AI system by entering commands below.</p>
+            <form action="/command" method="post">
+                <input type="text" id="command-input" name="command" placeholder="Enter a command..." autofocus>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+      
+        
+        
