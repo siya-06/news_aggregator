@@ -1,0 +1,3 @@
+Cutting-edge platform designed to streamline financial information processing by aggregating, summarizing, and analyzing the sentiment of news articles. 
+This platform leverages Natural Language Processing (NLP) techniques to deliver concise summaries, categorize news topics, and evaluate market sentiment, offering users a clear and actionable overview of financial news trends.
+My colleagues and I participated in an AIthon as members of the "Loop Troop" team.Together, we developed a groundbreaking AI-powered financial news aggregator. This immersive experience proved to be both intellectually stimulating and immensely enjoyable.
